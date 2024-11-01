@@ -1,10 +1,151 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-html, body{
-    width: 100%;
-    height: 100%;
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.menu-item {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-link {
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.menu-link:hover {
+  color: #222;
+}
+
+.brand-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.image {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.img-left,
+.img-right {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-left img,
+.img-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.project-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.project-details {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.project-number {
+  font-size: 14px;
+  color: #888;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 5px;
+}
+
+.project-description {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.project-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-nav button {
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.project-nav button:hover {
+  background-color: #555;
 }
