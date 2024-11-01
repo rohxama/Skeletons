@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Skeletons</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-
-        <div class="container">
-            <nav class="menu">
-                <div class="menu-item menu-left">
-                    <span class="menu-link">About</span>
-                    <span class="menu-link">Contact</span>
-                </div>
-                <div class="menu-item menu-center">
-                    <div class="brand-logo">
-                        Skeletons
-                    </div>
-                </div>
-            </nav>
-            <div class="image">
-                <div class="img-left"></div>
-                <div class="img-right"></div>
-            </div>
-            <div class="hero-image">
-                <div class="wrapper-img">
-                    <div class="box"></div>
-                </div>
-                <div>
-                    <img src alt>
-                </div>
-            </div>
-            <div class="header">
-                <p class="title">Antidote</p>
-            </div>
-            
-            <div class="hero-container">
-                <div class="sidebar-text">003</div>
-                <div class="projects">Projects</div>
-                <div class="img-nav">
-                    <div class="prev">Prev</div>
-                    <div class="next">next</div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skeletons Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="menu">
+        <div class="menu-item menu-left">
+          <span class="menu-link">About</span>
+          <span class="menu-link">Contact</span>
         </div>
+        <div class="menu-item menu-center">
+          <div class="brand-logo">Skeletons</div>
+        </div>
+      </nav>
 
-        
-        <script src="script.js"></script>
-    </body>
+      <section class="hero">
+        <div class="image">
+          <div class="img-left">
+            <img src="avatar.jpg" alt="Left Avatar" />
+          </div>
+          <!-- <div class="img-right">
+            <img src="avatar.jpg" alt="Right Avatar" />
+          </div> -->
+        </div>
+        <div class="hero-content">
+          <h1 class="title">Project Showcase</h1>
+          <p class="subtitle">Explore our latest projects and designs</p>
+        </div>
+      </section>
 
+      <section class="project-display">
+        <div class="project-details">
+          <p class="project-number">
+            Project <span id="project-number">001</span>
+          </p>
+          <h2 class="project-title" id="project-title">Welcome Project</h2>
+          <p class="project-description" id="project-description">
+            This is a brief description of our current project. Discover our
+            innovative ideas and creative solutions.
+          </p>
+        </div>
+        <div class="project-nav">
+          <button class="prev" id="prev">Prev</button>
+          <button class="next" id="next">Next</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
