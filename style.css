@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Monument Extended'), url('https://fonts.cdnfonts.com/s/19595/MonumentExtended-Ultrabold.woff') format('woff');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,5 +13,147 @@
 
 html, body{
     width: 100%;
+    height: 100vh;
+    background: #bebeb8;;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Monument Extended';
+}
+
+.menu-item{
+    flex:1;
+}
+
+.menu-left{
+    text-align: left;
+    margin-left: 4em;
+}
+
+.menu-link{
+    padding: 0 30px;
+}
+
+.menu-center{
+    text-align: right;
+    margin-right: 4em;
+}
+
+.hero-image{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-img{
+    position: absolute;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 50%;
+    height: 100vh;
+}
+
+img{
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+.box{
+    background: #bebeb8;
+    opacity:1;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 0;
+}
+
+.images{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    background-color: #000;
+}
+
+.left{
+    background: url('img2.jpeg') no-repeat 50% 50%;
+    background-size:cover ;
+}
+
+.right{
+    background: url('img3.jpeg') no-repeat 50% 50%;
+    background-size:cover ;
+}
+
+p{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:red;
+    font-family: "Sofia", cursive;
+    font-size: 300px;
+}
+
+.titile, .letter{
+    display: inline-block;
+    line-height: 1em;
+}
+
+.sidebar-text{
+    font-family: "Monument Extended";
+    position:absolute;
+    top: 20%;
+    right: 0.4em;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(117, 113, 113);
+}
+
+.projects{
+    position: absolute;
+    bottom: 10%;
+    left:10%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: "Monument Extended";
+}
+
+.img-nav{
+    position: absolute;
+    right: 10%;
+    bottom: 12%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color:#000;
+    font-family: "Monument Extended";
 }
